@@ -1,0 +1,167 @@
+    @font-face {
+        font-family: 'la';
+        src: url(../font/LeferiBaseRegular.ttf);
+    }
+    @font-face {
+        font-family: 'lab';
+        src: url(../font/LeferiBaseBold.ttf);
+    }
+    body{background: linear-gradient(90deg, rgb(255, 255, 255) 90%, blue 0);
+
+        background-size: 20px; background-position: -16px 0;}
+    .wrapper{width: 1200px; margin: auto;
+            background-color: pink; display: flex;
+            }
+        
+    header{width: 230px; }
+
+    .container{width: calc( 100% - 230px );
+            background-color:white;
+            display: flex;}
+    section{width:  calc(100% - 200px); background-color:  white;}
+    aside{width: 200px;}
+
+    footer{width: 1200px; margin: auto;
+    background-color: #1984bc;
+    display: flex; 
+    }
+    footer h1{width: 230px; padding: 30px 0;}
+    footer>div>ul{display: flex;}
+    footer>div{border-left: 1px solid #ededed; ;}
+    footer ul a{display: block; padding: 10px; font-family: 'la';
+    margin-top: 10px; margin-left: 10px;}
+    footer address{font-style: normal; line-height: 20px;
+                text-indent: 10px; margin-bottom: 20px;
+                margin-left: 10px;}
+    /* design */
+    header{
+        display: flex; justify-content: flex-start;
+        flex-direction: column; 
+        align-items: center;
+        background-color: white;
+    }
+    h1{font-size: 0px; text-align: center; padding: 50px 0;}
+    .lnb{font-size: 16px; font-weight: bold; width: 80%;
+        font-family: 'la';}
+    .lnb a{display: block; background-image: url(../images/arrow2.png);
+            background-repeat: no-repeat; margin-right: 5px;
+            background-position: right center;
+            text-align: left;
+            transition: 1s;}
+    .lnb li:hover{background-color: #1984bc;
+                    color: white;}
+        .lnb a:hover{ text-align: center;}
+
+        /* section design */
+    .mainBanner img{width: 100%;}
+    .search{background-color: #0179b9; padding: 10px;  font-weight: 900; font-size: 15px;
+        font-family: 'la'; }
+    .search>div{background-color: white; padding: 15px; position: relative;}
+    .search input{background-color: #0179b9;
+                border: none; height: 30px; width: 80%; 
+                 font-family: 'la'; color: white;}
+    .search div::after{content: ''; display: block; width: 27px;
+        height: 30px; background-repeat: no-repeat; 
+        top: 15px; right: 15px; 
+        background-color: #0179b9;
+        border-radius: 0 5px 5px 0;
+        background-image: url(../images/magnifying-glass-solid.svg);
+        position: absolute;
+
+    }
+    .search label{margin-right: 15px;}
+
+
+
+
+    aside{display: flex; flex-direction: column;}
+
+    .contentTitle{display: flex; justify-content: space-between;
+    margin-bottom:0.5rem ;}
+    .contentTitle+p{margin-bottom: 1rem;}
+    .pbProduct ul{display: flex; flex-wrap: wrap; }
+    .pbProduct li{width: calc(100% / 5); text-align: center;}
+    .pbProduct span{display: block; margin-bottom: 1rem; font-weight: bold;
+        font-family: 'la';  margin-top: 4px;  }
+    .pbProduct ul li img{height: 120px;}
+    .contents{display: flex;}
+    .contents>div{width: 50%;}
+    .more{border: 1px solid #ebebeb; border-radius: 4px;
+        padding:  3px 8px 0 8px; font-family: 'la';
+        font-size: 10px;}
+    .contents .more{font-size: 10px;  font-family: 'la';}
+    .pbService img{width: 100%;}
+    .pbService li{list-style: square; margin-left: 20px; 
+        margin-left: 20px; line-height: 30px;
+    font-family: 'la';}
+    .pbNutrition table{width: 100%;  border-collapse: collapse;}
+    .pbNutrition thead th{background-color: #0179b9;
+    height: 30px; color: white; border: 1px solid black;
+    border-bottom: none; font-family: 'la';}
+    .pbNutrition td{text-align: center; height: 30px; font-family: 'la';
+        border: 1px solid black; width: 25%; border-bottom: none;}
+    .pbNutrition table:nth-of-type(2) td{border-bottom:  1px solid black;}
+    
+    .pbProduct, .pbNutrition, .pbService 
+    {padding: 1rem;}
+    .smallbanner img{width: 100%;}
+    .newDesign{color: rgb(226, 0, 0); font-size: 10px; 
+                font-weight: 900;}
+    .imgMove img{width: 190px; margin-left: 20%;
+                 margin-bottom: 15px; margin-top: 10px;}
+    .footerLogo{margin-top: 10px;}
+
+
+    
+    h2,p{font-family: 'la';}
+    @media screen and (max-width:1250px){
+    body{background: none;}
+        .wrapper{width: 98%;}
+        footer{width: 98%;}
+        
+    }
+    @media screen and (max-width:1024px){
+    .container{flex-direction: column;}
+    section{width: 100%;}
+    aside{width: 100%; flex-direction: row;
+            justify-content: space-between;}
+    aside>div{width: 33.3333333333333333%;}
+    .smallbanner div{margin: 0 3px 0 3px;} 
+        
+    }
+  
+    @media screen and (max-width:760px){
+    .wrapper{flex-direction:  column;}
+    header{width: 100%; height: auto; padding-bottom: 30px;}
+    .lnb{ width: 100%;}
+    .lnb ul{display: flex; flex-wrap: wrap;}
+    .lnb li{width: 33.3333333333333333%; 
+        border:  3px solid #ebebeb;
+        border-right: none;
+        border-bottom: none;
+        }
+    .lnb li:nth-child(3n){border-right:  3px solid #ebebeb;}
+    .lnb li:nth-child(4), .lnb li:nth-child(5), .lnb li:nth-child(6)
+    {border-bottom: 3px solid #ebebeb;}
+    .lnb a{width:90%; margin: auto;}
+    .container{width: 100%;}
+    footer{padding-left: 0;}
+    .pbProduct li{width: calc(100% / 4); text-align: center; }
+    .contents{flex-direction: column;}
+    .contents>div{width: 100%;}
+    footer h1{display: none;}
+    footer address{padding-bottom: 10px;}
+    .imgMove{margin-left: 100px;}
+    
+    footer{  text-align: center; }
+    footer>div{ width: 100%;}
+       
+    footer>div>ul{display: flex; justify-content: center;}
+    footer ul a{margin-right: 30px;}
+    footer address{margin-bottom: 20px;
+        margin-top: 5px;}
+    }
+    @media screen and (max-width:420px){
+        .imgMove{margin-left: 0px;}
+    }
+    
